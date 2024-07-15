@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Something</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+        }
+
+
+        /* HEADER */
+
+
+        .header {
+            height: 15%;
+            width: 100%;
+            background-color: black;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(231, 35, 195);
+        }
+
+        #name {
+            font-size: 25px;
+            transform: translateX(45px);
+        }
+
+        .texts {
+            display: flex;
+            gap: 70px;
+            transform: translateX(-80px);
+        }
+
+        .textii {
+            padding: 5px 5px;
+            border-radius: 8px;
+        }
+
+        .textii:hover {
+            background-color: rgb(231, 35, 195);
+            color: white;
+            transition: 0.3s ease-out;
+        }
+
+        .fake {
+            height: 15%;
+            width: 100%;
+            background-color: black;
+        }
+
+
+        /* PAGE1 */
+
+
+        .page1 {
+            background-color: black;
+            height: 85%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section1 {
+            height: 95%;
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .left1 {
+            height: 100%;
+            width: 55%;
+            color: rgb(231, 35, 195);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        #date {
+            font-size: 25px;
+        }
+
+        .wish {
+            font-size: 50px;
+        }
+
+        .changelines {
+            font-weight: 600;
+        }
+
+        .smile {
+            text-align: center;
+        }
+
+        .smile button {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: black;
+            border: 1px solid rgb(231, 35, 195);
+            font-size: 15px;
+            padding: 10px 20px;
+            color: rgb(231, 35, 195);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .smile button:hover {
+            background-color: rgb(231, 35, 195);
+            color: white;
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgb(231, 35, 195);
+        }
+
+        .right1 {
+            height: 100%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .part1 {
+            height: 50%;
+            width: 50%;
+            border: 2px solid rgb(231, 35, 195);
+            border-radius: 50%;
+            object-fit: contain;
+            overflow: hidden;
+        }
+
+        .part2 {
+            height: 45%;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            color: rgb(231, 35, 195);
+        }
+
+        #two {
+            padding: 10px 10px;
+            font-size: 35px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        #two:hover {
+            transform: scale(1.1);
+        }
+
+        .part1 img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+
+        /* PAGE2 */
+
+
+        .page2 {
+            height: 85%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .section2 {
+            height: 98%;
+            width: 98%;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .part_1 {
+            height: 15%;
+            width: 100%;
+            background-color: black;
+            color: rgb(231, 35, 195);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+        }
+
+        .part_2 {
+            height: 85%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .cards {
+            height: 95%;
+            width: 22%;
+            background-color: rgb(32, 29, 29);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            transition: transform 0.3s ease-in-out;
+            gap: 50px;
+        }
+
+        .cards:hover {
+            transform: scale(1.05);
+        }
+
+        .pic {
+            height: 40%;
+            width: 60%;
+            border-radius: 50%;
+            background-color: rgb(32, 29, 29);
+            object-fit: contain;
+            overflow: hidden;
+        }
+
+        .pic img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .paras {
+            height: 55%;
+            width: 90%;
+            background-color: rgb(32, 29, 29);
+            color: rgb(231, 35, 195);
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .para{
+            font-style: italic;
+            font-size: 30px;
+        }
+
+
+        /* PAGE3 */
+
+        .page3 {
+            height: 85%;
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section3 {
+            height: 95%;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .top {
+            background-color: rgb(32, 29, 29);
+            height: 10%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(231, 35, 195);
+        }
+
+        .gallery {
+            height: 85%;
+            width: 100%;
+            display: grid;
+            gap: 5px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .boxes {
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-blend-mode: multiply;
+            background-position: bottom;
+            transition: all 2s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .boxes:hover {
+            background-color: antiquewhite;
+            background-position: top;
+        }
+
+        .row2 {
+            grid-row: span 2;
+        }
+
+        .col2 {
+            grid-column: span 2;
+        }
+
+        #box3 {
+            color: whitesmoke;
+            font-size: 30px;
+            font-style: italic;
+        }
+
+        #box5 {
+            color: white;
+        }
+
+        #box5:hover {
+            color: black;
+        }
+
+        #box1:hover {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="header">
+            <div id="name">
+                <h2>SAHANAA</h2>
+            </div>
+            <div class="texts">
+                <div class="textii" id="text1">Home</div>
+                <div class="textii" id="text2">Dumboo</div>
+                <div class="textii" id="text3">You&Me</div>
+            </div>
+        </div>
+        <div class="fake"></div>
+        <div class="page1">
+
+            <div class="section1">
+                <div class="left1">
+                    <div id="date">16 JULY 2024</div>
+                    <div class="wish">Happiest birthday <span class="changelines"></span></div>
+                    <div class="para">“Happy birthday dumboo, I'll pray that all your wishes and dreams come true.”
+                    </div>
+                    <div class="smile">
+                        <button>Smile please!</button>
+                    </div>
+                </div>
+                <div class="right1">
+                    <div class="part1">
+                        <img src="sah5.jpg" alt="sah">
+                    </div>
+                    <div class="part2">
+                        <div id="one">My girl, Sahanaa</div>
+                        <div id="two">Finally turned <b>18</b> ah.</div>
+                        <div id="three">Chella kuttyy</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="page2">
+
+            <div class="section2">
+
+                <div class="part_1"><b>SAHANAA</b>, Where are you looking? See here!</div>
+                <div class="part_2">
+                    <div class="cards" id="card1">
+                        <div class="pic">
+                            <img src="sah2.jpg" alt="sah2">
+                        </div>
+                        <div class="paras">
+                            Sahanaa my sweetiee, beautiee...  
+                        </div>
+                    </div>
+                    <div class="cards" id="card2">
+                        <div class="pic">
+                            <img src="sah.jpg" alt="sah2">
+                        </div>
+                        <div class="paras">
+                            Nee matum venum.
+                        </div>
+                    </div>
+                    <div class="cards" id="card3">
+                        <div class="pic">
+                            <img src="sah4.jpg" alt="sah2">
+                        </div>
+                        <div class="paras">
+                            Naan unnai kaaadhalillirem.
+                        </div>
+                    </div>
+                    <div class="cards" id="card4">
+                        <div class="pic">
+                            <img src="pere1.jpg" alt="sah2">
+                        </div>
+                        <div class="paras">
+                            I love the way you think
+                            I love the way you speak
+                            I love the way you smile
+                            I love the way how u think so maturely
+                            ....
+                            I'll be keep on writing but it won't end.
+                            In short
+                            I love you
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="page3">
+
+            <div class="section3">
+
+                <div class="top"><b>SAHANAA</b>, i have written something for you.</div>
+                <div class="gallery">
+                    <div class="boxes row2" id="box1"
+                        style="background-image: url(https://images.unsplash.com/photo-1569982175971-d92b01cf8694?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJhY2tncm91bmRzfGVufDB8fDB8fHww);">
+                        Happiest birthday to the most important and closest person, Sahana.
+                    </div>
+                    <div class="boxes col2" id="box2"
+                        style="background-image: url(https://images.unsplash.com/photo-1551376347-075b0121a65b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGJhY2tncm91bmRzfGVufDB8fDB8fHww);">
+                        Being with you is always fun
+                        I'll be always smiling, laughing and jumping inside like a freaky one.
+                    </div>
+                    <div class="boxes" id="box3"
+                        style="background-image: url(https://images.unsplash.com/photo-1598760122223-45f0f18a1bbd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZHN8ZW58MHx8MHx8fDA%3D);">
+                        SAHANAA
+                    </div>
+                    <div class="boxes row2" id="box4"
+                        style="background-image: url(https://images.unsplash.com/photo-1519750783826-e2420f4d687f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhY2tncm91bmRzfGVufDB8fDB8fHww);">
+                        The one who always listens to my craps,
+                        The one who always forgives me even if i do some craps,
+                        The one whom I love to irritate,
+                        The one who always cares for me all the way.
+                    </div>
+                    <div class="boxes col2" id="box5"
+                        style="background-image: url(https://images.unsplash.com/photo-1686170287433-c95faf6d3608?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+                        You are the best and smartest person I hv ever met. I don't know about the future like how
+                        things are gonna be, but def i wanna be with you only only.</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
